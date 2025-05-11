@@ -1,0 +1,11 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "main": "ClientApplication.js",
+    "scripts": {
+      "start": "node ClientApplication.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }

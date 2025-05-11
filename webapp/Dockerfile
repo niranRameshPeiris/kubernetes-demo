@@ -1,5 +1,13 @@
 FROM node:18-alpine
-COPY ClientApplication.js /ClientApplication.js
-RUN npm install express
-RUN npm install axios
-CMD ["node", "ClientApplication.js"]
+
+# Set working directory
+WORKDIR /app
+
+# Copy application source code
+COPY . .
+
+# Install dependencies
+RUN npm install
+
+# Define the command to run the application
+CMD ["npm", "start"]

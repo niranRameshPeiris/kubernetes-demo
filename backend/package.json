@@ -1,0 +1,11 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "BackendAPI.js",
+    "scripts": {
+      "start": "node BackendAPI.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }

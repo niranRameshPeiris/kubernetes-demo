@@ -1,4 +1,13 @@
 FROM node:18-alpine
-COPY BackendAPI.js /BackendAPI.js
-RUN npm install express
-CMD ["node", "BackendAPI.js"]
+
+# Set working directory
+WORKDIR /app
+
+# Copy application source code
+COPY . .
+
+# Install dependencies
+RUN npm install
+
+# Define the command to run the application
+CMD ["npm", "start"]
